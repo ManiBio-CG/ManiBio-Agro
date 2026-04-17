@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr-en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManiBio | Agroalimentaire</title>
+    <link rel="icon" type="image/x-icon" href=".//IMAGES/ICON.png">
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="#accueil"><img src="./IMAGES/MANIBIO LOGO BLANC.png" width="78" alt="MANIBIO LOGO"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#produits">Boutique</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about-us">Qui sommes-nous</a></li>
+        </ul>
+        <div class="cart-status">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <header id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Le goût naturel,<br>africain chez vous.</h1>
+            <p>Découvrez notre sélection de produits agroalimentaires 100% naturels et locaux.</p><br><br>
+            <a href="#produits" class="btn-primary">Voir la boutique</a>
+        </div>
+    </header>
+
+    <section class="trust-bar">
+        <div class="trust-item">
+            <span>🌿</span> 100% Naturel
+            <span>🚚</span> Livraison Rapide
+            <span>🤝</span> Soutien local
+        </div>
+    </section>
+    <section id="produits" class="container">
+        <h2 class="section-title">Nos Produits</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3>Miel Pur MANITA 250ml</h3>
+                    <p>Naturel et extrait de manière traditionnelle dans nos forêts.</p>
+                    <div class="price">2 500 XAF</div>
+                    <button class="btn-add" onclick="addToCart('Miel Pur MANITA 250ml', 2500)">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3>Jus de Bissap MANITA 250ml</h3>
+                    <p>Naturel et Bio extrait des fleurs d'Hibiscus de nos champs.</p>
+                    <div class="price">500 XAF</div>
+                    <button class="btn-add" onclick="addToCart('Jus de Bissap 250ml', 500)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3>Jus de Gingembre MANITA 250ml</h3>
+                    <p>Naturel et Bio extrait des racines de gingembre.</p>
+                    <div class="price">500 XAF</div>
+                    <button class="btn-add" onclick="addToCart('Jus de Gingembre 250ml', 500)">Ajouter au
+                        panier</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3>Pâte d'arachide MANITA 700ge</h3>
+                    <p>Beurre de cacahuètes naturel extrait des cacahuètes naturels de nos champs.</p>
+                    <div class="price">1 250 XAF</div>
+                    <button class="btn-add" onclick="addToCart('Beurre de cacahuètes', 1250)">Ajouter au panier</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3>Pâte d'arachide MANITA 600ge</h3>
+                    <p>Beurre de cacahuètes naturel extrait des cacahuètes naturels de nos champs.</p>
+                    <div class="price">1 250 XAF</div>
+                    <button class="btn-add" onclick="addToCart('Beurre de cacahuètes', 1250)">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout-area">
+            <button class="btn-whatsapp" onclick="envoyerWhatsApp()">
+                <p>Valider ma commande sur WhatsApp</p>
+            </button>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Contactez-nous</h2>
+        <div class="contact-grid">
+            <a href="tel:+242053815937" class="contact-card">Appel</a>
+            <a href="https://wa.me/242053815937" class="contact-card">WhatsApp</a>
+            <a href="mailto:contact.manibio@gmail.com" class="contact-card">Email</a>
+        </div>
+    </section>
+    <div id="about-us" class="about-us">
+        <h2>Qui sommes-nous ?</h2><br>
+        <p>Nous sommes <strong>ManiBio</strong>, une jeune structure agro alimentaire engagée dans la transformation
+            locale et la
+            valorisation des
+            produits naturels. Implantée au Congo, notre structure s'est donnée pour mission de proposer des boissons et
+            denrées
+            alimentaires saines, authentiques et accessibles, élaborées selon les standards stricts de qualité et
+            d'hygiène.
+            <br>
+            Nous mettons un point d'honneur à travailler principalement avec des matières locales, sélectionnées avec
+            soin
+            auprès de
+            nos producteurs de confiance. Cette approche nous permet de garantir la fraîcheur de nos produits tout en
+            soutenant
+            l'économie locale et les filières agricoles de notre pays. <br>
+            Tous nos produits sont conçus selon un processus maîtrisé: contrôle rigoureux des matières premières,
+            conditionnement hygiénique et traçabilité complète. <br>
+            Grâce à cette organisation, <strong>ManiBio</strong> se positionne comme acteur fiable, capable de répondre
+            aux attentes des
+            consommateurs et des partenaires professionnels tels que les supermarchés, grossistes, boutiques
+            spécialisées ou
+            services de restauration. <br>
+            Notre ambition est simple: offrir des produits de qualité, sécurisés, authentiques et respectueux de
+            savoir-faire local,
+            tout en développant progressivement une marque solide et innovante dans le secteur agro alimentaire.
+        </p>
+    </div>
+
+    <footer>
+        <div class="our-point">
+            <h2 class="h2-footer">Nos points de vente</h2><br>
+            <div class="group-point">
+                <div class="group">
+                    <p>Super U</p>
+                    <p>Park'n Shop</p>
+                    <p>Franprix</p>
+                    <p>Saja Market</p>
+                </div>
+                <div class="group">
+                    <p>Star food</p>
+                    <p>Zando Market</p>
+                    <p>Brazza Market</p>
+                    <p>Délice Rouge</p>
+                </div>
+                <div class="group">
+                    <p>Africa Market</p>
+                    <p>Dounya</p>
+                    <p>Mama Dina</p>
+                    <p>Mboté</p>
+                </div>
+                <div class="group">
+                    <p>Superette de Mampassi</p>
+                    <p>La Pointe</p>
+                    <p>Poissonnerie du Rail</p>
+                </div>
+            </div>
+        </div><br>
+        <p class="copyright">&copy;2026 ManiBio - Tous droit réservé</p>
+    </footer>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
